@@ -1,3 +1,4 @@
 [submodule "archeti/addons"]
 	path = archeti/addons
 	url = git@gitlab.com:archeti/odoo_addons.git
+    branch = 11.0
