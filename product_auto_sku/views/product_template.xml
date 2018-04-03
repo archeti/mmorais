@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_template_only_form_view" model="ir.ui.view">
+      <field name="name">Product Template with SKU sequence</field>
+      <field name="model">product.template</field>
+      <field name="inherit_id" ref="product.product_template_only_form_view"/>
+      <field name="arch" type="xml">
+        <xpath
+          expr="//field[@name='default_code']"
+          position="after"
+          >
+          <field name="sequence_code" invisible="1"/>
+          <button
+            type="object"
+            name="regenerate_default_code"
+            string="Regenerate SKU"
+            class="oe_right"
+            colspan="2"
+            />
+        </xpath>
+      </field>
+    </record>
+
+</odoo>
