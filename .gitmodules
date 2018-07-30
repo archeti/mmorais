@@ -2,3 +2,7 @@
 	path = archeti/addons
 	url = git@gitlab.com:archeti/odoo_addons.git
     branch = 11.0
+[submodule "archeti/mmorais"]
+	path = archeti/mmorais
+	url = git@gitlab.com:archeti/mmorais.git
+    branch = staging
